@@ -2,6 +2,7 @@ obj\Release\net10.0-android\android-x64\aot\_Microsoft.Android.Resource.Designer
 obj\Release\net10.0-android\android-x64\aot\GeoMapsPrototype.dll.so
 obj\Release\net10.0-android\android-x64\aot\Microsoft.Extensions.Configuration.dll.so
 obj\Release\net10.0-android\android-x64\aot\Microsoft.Extensions.Configuration.Abstractions.dll.so
+obj\Release\net10.0-android\android-x64\aot\Microsoft.Extensions.Configuration.UserSecrets.dll.so
 obj\Release\net10.0-android\android-x64\aot\Microsoft.Extensions.DependencyInjection.dll.so
 obj\Release\net10.0-android\android-x64\aot\Microsoft.Extensions.DependencyInjection.Abstractions.dll.so
 obj\Release\net10.0-android\android-x64\aot\Microsoft.Extensions.Diagnostics.Abstractions.dll.so

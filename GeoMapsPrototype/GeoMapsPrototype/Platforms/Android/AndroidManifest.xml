@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true">
-		<meta-data android:name="com.google.android.geo.API_KEY" android:value="APIKEYHERE" />
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBZaJ-nA2mQHpR6DUiLDYHIQJ_ZFoVOhdY" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.geo.MAP_ID" android:value="7f2de8574d2ae4c5f8b241ab" />
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />

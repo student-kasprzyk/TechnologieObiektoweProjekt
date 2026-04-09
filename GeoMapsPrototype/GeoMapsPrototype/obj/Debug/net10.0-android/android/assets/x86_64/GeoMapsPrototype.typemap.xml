@@ -1,10 +1,12 @@
-<api type="debug" assembly-name="GeoMapsPrototype" mvid="9be9f6f8affe49749eff52f4ed8b9361">
+<api type="debug" assembly-name="GeoMapsPrototype" mvid="b342b49e56eb4914ae79e34275472121">
   <java-to-managed>
-    <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554442" />
-    <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554443" />
+    <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554443" />
+    <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554444" />
+    <entry java-name="crc64f8874d5b6cb775e9/MapReadyCallback" managed-name="GeoMapsPrototype.Platforms.Android.MapReadyCallback, GeoMapsPrototype" managed-type-token-id="33554447" />
   </java-to-managed>
   <managed-to-java>
-    <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554442" />
-    <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554443" />
+    <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554443" />
+    <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554444" />
+    <entry java-name="crc64f8874d5b6cb775e9/MapReadyCallback" managed-name="GeoMapsPrototype.Platforms.Android.MapReadyCallback, GeoMapsPrototype" managed-type-token-id="33554447" />
   </managed-to-java>
 </api>

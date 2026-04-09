@@ -15,6 +15,7 @@
   <application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:name="crc64628996fd7ac5092a.MainApplication" android:label="GeoMapsPrototype" android:extractNativeLibs="true">
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBZaJ-nA2mQHpR6DUiLDYHIQJ_ZFoVOhdY" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.geo.MAP_ID" android:value="7f2de8574d2ae4c5f8b241ab" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="crc6468b6408a11370c2f.WebAuthenticatorIntermediateActivity" />
     <provider android:authorities="com.companyname.geomapsprototype.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="microsoft.maui.essentials.fileProvider">

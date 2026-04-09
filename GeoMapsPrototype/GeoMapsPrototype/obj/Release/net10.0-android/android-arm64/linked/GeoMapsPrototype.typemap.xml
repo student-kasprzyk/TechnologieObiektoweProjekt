@@ -1,8 +1,9 @@
-<api type="release" assembly-name="GeoMapsPrototype" mvid="a4c98bdfd4b84b9fbc295faac86f5444">
-  <module assembly-name="GeoMapsPrototype" mvid="a4c98bdfd4b84b9fbc295faac86f5444" mvid-bytes="34vJpLjUn0u8KV+qyG9URA==">
+<api type="release" assembly-name="GeoMapsPrototype" mvid="3eac7bef8eb442bfb2dce36dbf0df07d">
+  <module assembly-name="GeoMapsPrototype" mvid="3eac7bef8eb442bfb2dce36dbf0df07d" mvid-bytes="73usPrSOv0Ky3ONtvw3wfQ==">
     <types-scratch>
-      <entry key="crc64628996fd7ac5092a/MainActivity" java-name="crc64628996fd7ac5092a/MainActivity" managed-type-name="GeoMapsPrototype.MainActivity" token="33554441" />
-      <entry key="crc64628996fd7ac5092a/MainApplication" java-name="crc64628996fd7ac5092a/MainApplication" managed-type-name="GeoMapsPrototype.MainApplication" token="33554442" />
+      <entry key="crc64628996fd7ac5092a/MainActivity" java-name="crc64628996fd7ac5092a/MainActivity" managed-type-name="GeoMapsPrototype.MainActivity" token="33554442" />
+      <entry key="crc64628996fd7ac5092a/MainApplication" java-name="crc64628996fd7ac5092a/MainApplication" managed-type-name="GeoMapsPrototype.MainApplication" token="33554443" />
+      <entry key="crc64f8874d5b6cb775e9/MapReadyCallback" java-name="crc64f8874d5b6cb775e9/MapReadyCallback" managed-type-name="GeoMapsPrototype.Platforms.Android.MapReadyCallback" token="33554446" />
     </types-scratch>
   </module>
 </api>
