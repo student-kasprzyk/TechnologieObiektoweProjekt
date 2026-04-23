@@ -17,14 +17,6 @@ namespace GeoMapsPrototype
             map.IsScrollEnabled = false;
             map.IsZoomEnabled = true;
 
-            /*Przybliżenie mapy
-            double zoomLevel = 10;
-            double latlongDegrees = 360 / (Math.Pow(2, zoomLevel));
-            if (map.VisibleRegion != null)
-            {
-                map.MoveToRegion(new MapSpan(map.VisibleRegion.Center, latlongDegrees, latlongDegrees));
-            }*/
-
             CustomPin pin = new CustomPin
             {
                 Label = "Test Lokacja",
@@ -34,22 +26,38 @@ namespace GeoMapsPrototype
                 ImageSource = ImageSource.FromUri(new Uri("https://weaii.tu.kielce.pl/wp-content/uploads/2016/11/weaii_1.png"))
             };
 
-            /*Pin pin = new Pin
-            {
-                Label = "Test Lokacja",
-                Address = "Budynek D",
-                Type = PinType.Place,
-                Location = BudD,
-            };*/
             map.Pins.Add(pin);
 
             LocationProvider.LocationChanged += (sender, location) =>
             {
-                MainThread.BeginInvokeOnMainThread(() =>
+                if (location == null) return;
+
+                MainThread.BeginInvokeOnMainThread(async () =>
                 {
-                    map.MoveToRegion(MapSpan.FromCenterAndRadius(location, Distance.FromKilometers(1)));
+                    if (map != null && this.Handler != null)
+                    {
+                        try
+                        {
+                            await Task.Delay(100);
+                            map.MoveToRegion(MapSpan.FromCenterAndRadius(location, Distance.FromKilometers(0.5)));
+                            System.Diagnostics.Debug.WriteLine($"[UI] Mapa przesunięta na: {location.Latitude}, {location.Longitude}");
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine($"[UI] Błąd przesunięcia: {ex.Message}");
+                        }
+                    }
                 });
             };
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
+            if (status != PermissionStatus.Granted)
+            {
+                await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+            }
         }
 
     }

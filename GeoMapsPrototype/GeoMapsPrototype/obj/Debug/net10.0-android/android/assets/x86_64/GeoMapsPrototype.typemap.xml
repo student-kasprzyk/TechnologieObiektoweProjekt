@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="GeoMapsPrototype" mvid="9bf32d8636b34b39872653edd4c35bd6">
+<api type="debug" assembly-name="GeoMapsPrototype" mvid="ab9a35f94a4749bbaafaeb4fc5f4f5ea">
   <java-to-managed>
     <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554444" />
     <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554445" />

@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>C:\Users\Rat\source\repos\GeoMapsPrototype\GeoMapsPrototype</SourceProjectPath>
+      <SourceProjectPath>C:\Users\Rat\Documents\GitHub\TechnologieObiektoweProjekt\GeoMapsPrototype\GeoMapsPrototype</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

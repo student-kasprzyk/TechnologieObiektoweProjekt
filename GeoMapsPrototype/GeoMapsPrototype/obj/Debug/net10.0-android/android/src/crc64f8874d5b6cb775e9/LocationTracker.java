@@ -12,6 +12,7 @@ public class LocationTracker
 		__md_methods = 
 			"n_onStartCommand:(Landroid/content/Intent;II)I:GetOnStartCommand_Landroid_content_Intent_IIHandler\n" +
 			"n_onBind:(Landroid/content/Intent;)Landroid/os/IBinder;:GetOnBind_Landroid_content_Intent_Handler\n" +
+			"n_onDestroy:()V:GetOnDestroyHandler\n" +
 			"";
 		mono.android.Runtime.register ("GeoMapsPrototype.Platforms.Android.LocationTracker, GeoMapsPrototype", LocationTracker.class, __md_methods);
 	}
@@ -37,6 +38,13 @@ public class LocationTracker
 	}
 
 	private native android.os.IBinder n_onBind (android.content.Intent p0);
+
+	public void onDestroy ()
+	{
+		n_onDestroy ();
+	}
+
+	private native void n_onDestroy ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
