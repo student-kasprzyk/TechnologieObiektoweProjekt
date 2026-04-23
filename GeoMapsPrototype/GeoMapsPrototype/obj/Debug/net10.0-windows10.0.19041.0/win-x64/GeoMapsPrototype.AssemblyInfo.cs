@@ -19,7 +19,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeoMapsPrototype")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+dc178ce330e07bbffdf9a2d6fc01b020ebc43c79")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeoMapsPrototype")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeoMapsPrototype")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

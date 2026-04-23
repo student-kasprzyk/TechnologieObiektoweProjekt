@@ -1,5 +1,4 @@
 ﻿using Android.Gms.Maps;
-using System.Reflection;
 
 namespace GeoMapsPrototype.Platforms.Android
 {
@@ -14,20 +13,22 @@ namespace GeoMapsPrototype.Platforms.Android
 
         public async void OnMapReady(GoogleMap googleMap)
         {
-            _handler.OnMapReady(googleMap);
-
             try
             {
                 using var stream = await FileSystem.OpenAppPackageFileAsync("styleLight.json");
                 using var reader = new StreamReader(stream);
                 string json = await reader.ReadToEndAsync();
 
-                googleMap.SetMapStyle(new global::Android.Gms.Maps.Model.MapStyleOptions(json));
+                bool success = googleMap.SetMapStyle(
+                    new global::Android.Gms.Maps.Model.MapStyleOptions(json));
+
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Błąd ładowania stylu mapy: {ex.Message}");
             }
+
+            _handler.OnMapReady(googleMap);
         }
     }
 }

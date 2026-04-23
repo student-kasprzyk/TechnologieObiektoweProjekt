@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="GeoMapsPrototype/GeoMapsPrototype.csproj" />
+  <Project Path="GeoMapsPrototype/GeoMapsPrototype.csproj">
+    <Deploy />
+  </Project>
 </Solution>

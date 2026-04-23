@@ -3,12 +3,9 @@ using Android.Gms.Maps.Model;
 using Android.Graphics.Drawables;
 using Microsoft.Maui.Maps;
 using Microsoft.Maui.Maps.Handlers;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Maui.Platform;
 using MauiMap = Microsoft.Maui.Maps.IMap;
 using MauiMapHandler = Microsoft.Maui.Maps.Handlers.IMapHandler;
-using Microsoft.Maui.Platform;
 
 namespace GeoMapsPrototype.Platforms.Android
 {
@@ -24,8 +21,8 @@ namespace GeoMapsPrototype.Platforms.Android
         {
         }
 
-        public CustomMapHandler(IPropertyMapper? mapper = null, CommandMapper? commandMapper = null) : base(
-            mapper ?? CustomMapper, commandMapper ?? CommandMapper)
+        public CustomMapHandler(IPropertyMapper? mapper = null, CommandMapper? commandMapper = null)
+            : base(mapper ?? CustomMapper, commandMapper ?? CommandMapper)
         {
         }
 
@@ -42,6 +39,15 @@ namespace GeoMapsPrototype.Platforms.Android
         public void OnMapReady(GoogleMap googleMap)
         {
             _googleMap = googleMap;
+            _googleMap.UiSettings.MapToolbarEnabled = false;
+            _googleMap.UiSettings.ScrollGesturesEnabled = false;
+            _googleMap.UiSettings.CompassEnabled = false;
+            _googleMap.UiSettings.MyLocationButtonEnabled = false;
+            _googleMap.UiSettings.ZoomControlsEnabled = false;
+            /*_googleMap.MaxZoomLevel =
+            _googleMap.MinZoomLevel = */
+
+            UpdateValue(nameof(MauiMap.Pins));
         }
 
         private static new void MapPins(MauiMapHandler handler, MauiMap map)
@@ -52,6 +58,7 @@ namespace GeoMapsPrototype.Platforms.Android
                 {
                     marker.Remove();
                 }
+                mapHandler.Markers.Clear();
 
                 mapHandler.AddPins(map.Pins);
             }
@@ -71,13 +78,16 @@ namespace GeoMapsPrototype.Platforms.Android
                 {
                     var markerOption = mapPinHandler.PlatformView;
                     if (_googleMap != null)
+                    {
                         if (pin is CustomPin cp)
                         {
                             cp.ImageSource.LoadImage(MauiContext, result =>
                             {
-                                if (result?.Value is BitmapDrawable bitmapDrawable && bitmapDrawable.Bitmap != null)
+                                if (result?.Value is BitmapDrawable bitmapDrawable
+                                    && bitmapDrawable.Bitmap != null)
                                 {
-                                    markerOption.SetIcon(BitmapDescriptorFactory.FromBitmap(bitmapDrawable.Bitmap));
+                                    markerOption.SetIcon(
+                                        BitmapDescriptorFactory.FromBitmap(bitmapDrawable.Bitmap));
                                 }
 
                                 AddMarker(_googleMap, pin, Markers, markerOption);
@@ -87,11 +97,13 @@ namespace GeoMapsPrototype.Platforms.Android
                         {
                             AddMarker(_googleMap, pin, Markers, markerOption);
                         }
+                    }
                 }
             }
         }
 
-        private static void AddMarker(GoogleMap? map, IMapPin pin, List<Marker> markers, MarkerOptions markerOption)
+        private static void AddMarker(GoogleMap? map, IMapPin pin, List<Marker> markers,
+            MarkerOptions markerOption)
         {
             if (map is null) return;
             var marker = map.AddMarker(markerOption);
