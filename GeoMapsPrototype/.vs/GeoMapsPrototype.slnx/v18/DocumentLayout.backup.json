@@ -3,52 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\locationtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\locationtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\locationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\locationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\custommaphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\custommaphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\mapreadycallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\mapreadycallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\resources\\raw\\stylelight.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\resources\\raw\\stylelight.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\custompin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\custompin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\locationtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\locationtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\resources\\raw\\stylelight.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\resources\\raw\\stylelight.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\mapreadycallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\mapreadycallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -62,24 +74,162 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml",
+              "RelativeToolTip": "GeoMapsPrototype\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-23T23:57:55.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:50:43.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:09:37.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml.cs*",
+              "RelativeToolTip": "GeoMapsPrototype\\MainPage.xaml.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwB8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T07:39:53.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocationProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\LocationProvider.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\LocationProvider.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\LocationProvider.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\LocationProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T06:39:36.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomMapHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:10:37.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomPin.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\CustomPin.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\CustomPin.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\CustomPin.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\CustomPin.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T06:25:08.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LocationTracker.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T06:19:36.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml",
+              "RelativeToolTip": "GeoMapsPrototype\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T06:25:07.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\App.xaml.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\App.xaml.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:59:04.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MauiProgram.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\MauiProgram.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T07:58:08.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AndroidManifest.xml",
               "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\AndroidManifest.xml",
               "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\AndroidManifest.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-04-23T23:22:29.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T23:26:14.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "styleLight.json",
               "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Resources\\Raw\\styleLight.json",
               "RelativeDocumentMoniker": "GeoMapsPrototype\\Resources\\Raw\\styleLight.json",
@@ -91,83 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomPin.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\CustomPin.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\CustomPin.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\CustomPin.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\CustomPin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T06:25:08.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainActivity.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\MainActivity.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T07:09:37.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\MainPage.xaml.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwE0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:39:53.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LocationProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\LocationProvider.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\LocationProvider.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\LocationProvider.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\LocationProvider.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T06:39:36.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomMapHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\CustomMapHandler.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwCkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T07:10:37.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocationTracker.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\Platforms\\Android\\LocationTracker.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFMAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T06:19:36.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "MapReadyCallback.cs",
               "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\MapReadyCallback.cs",
               "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\MapReadyCallback.cs",
@@ -179,19 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MauiProgram.cs",
-              "RelativeToolTip": "GeoMapsPrototype\\MauiProgram.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T07:58:08.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "MainApplication.cs",
               "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\Platforms\\Android\\MainApplication.cs",
               "RelativeDocumentMoniker": "GeoMapsPrototype\\Platforms\\Android\\MainApplication.cs",
@@ -203,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\App.xaml",
               "RelativeDocumentMoniker": "GeoMapsPrototype\\App.xaml",
@@ -211,19 +273,8 @@
               "RelativeToolTip": "GeoMapsPrototype\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-09T06:25:06.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml",
-              "RelativeDocumentMoniker": "GeoMapsPrototype\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml",
-              "RelativeToolTip": "GeoMapsPrototype\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-09T06:25:07.565Z"
+              "WhenOpened": "2026-04-09T06:25:06.175Z",
+              "EditorCaption": ""
             }
           ]
         }
