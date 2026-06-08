@@ -1,12 +1,87 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\pintask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\pintask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mapinteractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mapinteractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|c:\\users\\rat\\documents\\github\\technologieobiektoweprojekt\\geomapsprototype\\geomapsprototype\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B50FDA-29D8-385C-DB5F-518773D10B47}|GeoMapsPrototype\\GeoMapsPrototype.csproj|solutionrelative:geomapsprototype\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PinTask.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\PinTask.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\PinTask.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\PinTask.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\PinTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T10:06:57.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MapInteractionService.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MapInteractionService.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\MapInteractionService.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MapInteractionService.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\MapInteractionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T10:06:52.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\AppShell.xaml.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T08:35:57.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "GeoMapsPrototype\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Rat\\Documents\\GitHub\\TechnologieObiektoweProjekt\\GeoMapsPrototype\\GeoMapsPrototype\\MainPage.xaml.cs",
+              "RelativeToolTip": "GeoMapsPrototype\\MainPage.xaml.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAswKMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T08:35:27.708Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

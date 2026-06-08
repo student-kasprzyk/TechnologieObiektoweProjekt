@@ -1,4 +1,4 @@
-﻿using Microsoft.Maui.Controls.Maps;
+using Microsoft.Maui.Controls.Maps;
 
 namespace GeoMapsPrototype
 {
@@ -12,6 +12,9 @@ namespace GeoMapsPrototype
 
         public static readonly BindableProperty IsTaskCompletedProperty =
             BindableProperty.Create(nameof(IsTaskCompleted), typeof(bool), typeof(CustomPin), false);
+
+        public static readonly BindableProperty TaskDataProperty =
+            BindableProperty.Create(nameof(TaskData), typeof(PinTask), typeof(CustomPin));
 
         public ImageSource? ImageSource
         {
@@ -33,6 +36,12 @@ namespace GeoMapsPrototype
         {
             get => (bool)GetValue(IsTaskCompletedProperty);
             set => SetValue(IsTaskCompletedProperty, value);
+        }
+
+        public PinTask? TaskData
+        {
+            get => (PinTask?)GetValue(TaskDataProperty);
+            set => SetValue(TaskDataProperty, value);
         }
 
         public CustomPin() { }

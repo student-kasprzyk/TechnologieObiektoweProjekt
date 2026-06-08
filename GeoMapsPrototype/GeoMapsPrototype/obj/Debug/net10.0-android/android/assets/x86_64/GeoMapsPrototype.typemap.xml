@@ -1,0 +1,14 @@
+<api type="debug" assembly-name="GeoMapsPrototype" mvid="2c6e2d4b4e6b4091ac1a64800233810f">
+  <java-to-managed>
+    <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554451" />
+    <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554452" />
+    <entry java-name="crc64f8874d5b6cb775e9/LocationTracker" managed-name="GeoMapsPrototype.Platforms.Android.LocationTracker, GeoMapsPrototype" managed-type-token-id="33554455" />
+    <entry java-name="crc64f8874d5b6cb775e9/MapReadyCallback" managed-name="GeoMapsPrototype.Platforms.Android.MapReadyCallback, GeoMapsPrototype" managed-type-token-id="33554456" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64628996fd7ac5092a/MainActivity" managed-name="GeoMapsPrototype.MainActivity, GeoMapsPrototype" managed-type-token-id="33554451" />
+    <entry java-name="crc64628996fd7ac5092a/MainApplication" managed-name="GeoMapsPrototype.MainApplication, GeoMapsPrototype" managed-type-token-id="33554452" />
+    <entry java-name="crc64f8874d5b6cb775e9/LocationTracker" managed-name="GeoMapsPrototype.Platforms.Android.LocationTracker, GeoMapsPrototype" managed-type-token-id="33554455" />
+    <entry java-name="crc64f8874d5b6cb775e9/MapReadyCallback" managed-name="GeoMapsPrototype.Platforms.Android.MapReadyCallback, GeoMapsPrototype" managed-type-token-id="33554456" />
+  </managed-to-java>
+</api>
