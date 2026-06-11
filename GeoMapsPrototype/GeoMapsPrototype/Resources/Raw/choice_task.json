@@ -1,0 +1,22 @@
+[
+  {
+    "type": "SingleChoice",
+    "title": "Stolica Polski",
+    "question": "Które miasto jest stolicą Polski?",
+    "optionA": "Kraków",
+    "optionB": "Warszawa",
+    "optionC": "Gdańsk",
+    "optionD": "Wrocław",
+    "correctOption": "B"
+  },
+  {
+    "type": "MultipleChoice",
+    "title": "Miasta nad Wisłą",
+    "question": "Które z poniższych miast leżą nad Wisłą?",
+    "optionA": "Warszawa",
+    "optionB": "Poznań",
+    "optionC": "Kraków",
+    "optionD": "Wrocław",
+    "correctOptions": [ "A", "C" ]
+  }
+]
