@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GraTerenowa.Views.TaskEditorPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:GraTerenowa.ViewModels"
+    xmlns:models="clr-namespace:GraTerenowa.Models"
+    Title="{Binding IsEditing, Converter={StaticResource BoolToTitleConverter}}">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+
+			<!-- true = "Edytuj zadanie", false = "Nowe zadanie" -->
+			<local:BoolToStringConverter
+                x:Key="BoolToTitleConverter"
+                TrueValue="Edytuj zadanie"
+                FalseValue="Nowe zadanie"
+                xmlns:local="clr-namespace:GraTerenowa.Converters" />
+
+			<!-- string niepusty = true -->
+			<local:StringNotEmptyConverter
+                x:Key="StringNotEmptyConverter"
+                xmlns:local="clr-namespace:GraTerenowa.Converters" />
+
+			<!-- null = false, cokolwiek = true -->
+			<local:NotNullToBoolConverter
+                x:Key="NotNullToBoolConverter"
+                xmlns:local="clr-namespace:GraTerenowa.Converters" />
+
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem
+            Text="Usuń"
+            Command="{Binding DeleteTaskCommand}"
+            IsDestructive="True" />
+	</ContentPage.ToolbarItems>
+
+	<ScrollView>
+		<VerticalStackLayout Padding="16" Spacing="16">
+
+			<!-- ── Typ zadania ── -->
+			<Label
+                Text="Typ zadania"
+                FontSize="13"
+                TextColor="Gray" />
+
+			<Picker
+                ItemsSource="{Binding AvailableTypes}"
+                SelectedItem="{Binding SelectedType}"
+                Title="Wybierz typ zadania" />
+
+			<!-- ── Tytuł (wspólne) ── -->
+			<Label
+                Text="Tytuł zadania"
+                FontSize="13"
+                TextColor="Gray" />
+
+			<Entry
+                Placeholder="np. Przy głównej bramie"
+                Text="{Binding Title}"
+                ClearButtonVisibility="WhileEditing" />
+
+			<!-- ════════════════════════════════════
+                 SEKCJA: Question
+                 ════════════════════════════════════ -->
+			<VerticalStackLayout
+                IsVisible="{Binding IsQuestion}"
+                Spacing="8">
+
+				<Border
+                    BackgroundColor="#E8F5E9"
+                    StrokeShape="RoundRectangle 8"
+                    Padding="10,6">
+					<Label
+                        Text="Pytanie i odpowiedź"
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        TextColor="#2E7D32" />
+				</Border>
+
+				<Label
+                    Text="Treść pytania"
+                    FontSize="13"
+                    TextColor="Gray" />
+				<Editor
+                    Placeholder="Wpisz treść pytania zadawanego graczowi..."
+                    Text="{Binding QuestionText}"
+                    AutoSize="TextChanges"
+                    MinimumHeightRequest="80"
+                    Margin="0,0,0,4" />
+
+				<Label
+                    Text="Poprawna odpowiedź"
+                    FontSize="13"
+                    TextColor="Gray" />
+				<Entry
+                    Placeholder="Wpisz poprawną odpowiedź"
+                    Text="{Binding CorrectAnswer}"
+                    ClearButtonVisibility="WhileEditing" />
+
+				<Label
+                    Text="Odpowiedź nie jest wrażliwa na wielkość liter."
+                    FontSize="11"
+                    TextColor="Gray"
+                    FontAttributes="Italic" />
+
+			</VerticalStackLayout>
+
+			<!-- ════════════════════════════════════
+                 SEKCJA: QRCode
+                 ════════════════════════════════════ -->
+			<VerticalStackLayout
+                IsVisible="{Binding IsQRCode}"
+                Spacing="8">
+
+				<Border
+                    BackgroundColor="#E3F2FD"
+                    StrokeShape="RoundRectangle 8"
+                    Padding="10,6">
+					<Label
+                        Text="Kod QR do wydruku"
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        TextColor="#1565C0" />
+				</Border>
+
+				<Label
+                    Text="Treść kodu QR"
+                    FontSize="13"
+                    TextColor="Gray" />
+
+				<Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+					<Entry
+                        Grid.Column="0"
+                        Placeholder="np. LOK_01_ZAMEK"
+                        Text="{Binding QrContent}"
+                        ClearButtonVisibility="WhileEditing" />
+					<Button
+                        Grid.Column="1"
+                        Text="Losuj"
+                        WidthRequest="72"
+                        CornerRadius="8"
+                        BackgroundColor="#1E88E5"
+                        TextColor="White"
+                        Command="{Binding GenerateRandomCodeCommand}" />
+				</Grid>
+
+				<Label
+                    Text="Wpisz własny kod lub użyj przycisku Losuj — ten string zostanie zakodowany w QR."
+                    FontSize="11"
+                    TextColor="Gray"
+                    FontAttributes="Italic" />
+
+				<!-- Podgląd QR na żywo -->
+				<Border
+                    IsVisible="{Binding QrPreview,
+                        Converter={StaticResource NotNullToBoolConverter}}"
+                    StrokeShape="RoundRectangle 12"
+                    Padding="16"
+                    Margin="0,8"
+                    HorizontalOptions="Center">
+					<VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+						<Label
+                            Text="Podgląd kodu QR"
+                            FontSize="12"
+                            TextColor="Gray"
+                            HorizontalOptions="Center" />
+						<Image
+                            Source="{Binding QrPreview}"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            HorizontalOptions="Center" />
+						<Label
+                            Text="{Binding QrContent}"
+                            FontSize="11"
+                            TextColor="Gray"
+                            HorizontalOptions="Center"
+                            FontAttributes="Italic" />
+					</VerticalStackLayout>
+				</Border>
+
+				<!-- Eksport do wydruku -->
+				<Button
+                    Text="Eksportuj PNG do wydruku"
+                    BackgroundColor="#1565C0"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="46"
+                    Command="{Binding ExportQRCommand}"
+                    IsEnabled="{Binding QrContent,
+                        Converter={StaticResource StringNotEmptyConverter}}" />
+
+			</VerticalStackLayout>
+			<!-- ════════════════════════════════════
+     SEKCJA: SingleChoice (A/B/C/D)
+     ════════════════════════════════════ -->
+			<VerticalStackLayout
+				IsVisible="{Binding IsSingleChoice}"
+				Spacing="8">
+
+				<Border
+					BackgroundColor="#F3E5F5"
+					StrokeShape="RoundRectangle 8"
+					Padding="10,6">
+					<Label
+						Text="Pytanie jednokrotnego wyboru A/B/C/D"
+						FontSize="13"
+						FontAttributes="Bold"
+						TextColor="#6A1B9A" />
+				</Border>
+
+				<Label Text="Treść pytania" FontSize="13" TextColor="Gray" />
+				<Editor
+					Placeholder="Wpisz treść pytania..."
+					Text="{Binding ChoiceQuestion}"
+					AutoSize="TextChanges"
+					MinimumHeightRequest="60" />
+
+				<!-- Opcje A/B/C/D -->
+				<Grid
+					ColumnDefinitions="Auto,*"
+					RowDefinitions="Auto,Auto,Auto,Auto"
+					RowSpacing="8"
+					ColumnSpacing="8"
+					Margin="0,4">
+
+					<Border
+						Grid.Row="0" Grid.Column="0"
+						BackgroundColor="#6A1B9A"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="A" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="0" Grid.Column="1"
+						Placeholder="Opcja A"
+						Text="{Binding OptionA}" />
+
+					<Border
+						Grid.Row="1" Grid.Column="0"
+						BackgroundColor="#6A1B9A"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="B" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="1" Grid.Column="1"
+						Placeholder="Opcja B"
+						Text="{Binding OptionB}" />
+
+					<Border
+						Grid.Row="2" Grid.Column="0"
+						BackgroundColor="#6A1B9A"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="C" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="2" Grid.Column="1"
+						Placeholder="Opcja C"
+						Text="{Binding OptionC}" />
+
+					<Border
+						Grid.Row="3" Grid.Column="0"
+						BackgroundColor="#6A1B9A"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="D" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="3" Grid.Column="1"
+						Placeholder="Opcja D"
+						Text="{Binding OptionD}" />
+
+				</Grid>
+
+				<Label Text="Poprawna odpowiedź" FontSize="13" TextColor="Gray" />
+				<Picker
+					ItemsSource="{Binding AvailableOptions}"
+					SelectedItem="{Binding CorrectOption}"
+					Title="Wybierz poprawną opcję" />
+
+			</VerticalStackLayout>
+
+			<!-- ════════════════════════════════════
+     SEKCJA: MultipleChoice
+     ════════════════════════════════════ -->
+			<VerticalStackLayout
+				IsVisible="{Binding IsMultipleChoice}"
+				Spacing="8">
+
+				<Border
+					BackgroundColor="#E8EAF6"
+					StrokeShape="RoundRectangle 8"
+					Padding="10,6">
+					<Label
+						Text="Pytanie wielokrotnego wyboru"
+						FontSize="13"
+						FontAttributes="Bold"
+						TextColor="#283593" />
+				</Border>
+
+				<Label Text="Treść pytania" FontSize="13" TextColor="Gray" />
+				<Editor
+					Placeholder="Wpisz treść pytania..."
+					Text="{Binding ChoiceQuestion}"
+					AutoSize="TextChanges"
+					MinimumHeightRequest="60" />
+
+				<!-- Opcje z checkboxami -->
+				<Label
+					Text="Opcje odpowiedzi (zaznacz poprawne)"
+					FontSize="13"
+					TextColor="Gray"
+					Margin="0,4,0,0" />
+
+				<Grid
+					ColumnDefinitions="Auto,*,Auto"
+					RowDefinitions="Auto,Auto,Auto,Auto"
+					RowSpacing="8"
+					ColumnSpacing="8">
+
+					<!-- A -->
+					<Border
+						Grid.Row="0" Grid.Column="0"
+						BackgroundColor="#283593"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="A" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="0" Grid.Column="1"
+						Placeholder="Opcja A"
+						Text="{Binding OptionA}" />
+					<CheckBox
+						Grid.Row="0" Grid.Column="2"
+						IsChecked="{Binding IsACorrect}"
+						Color="#283593" />
+
+					<!-- B -->
+					<Border
+						Grid.Row="1" Grid.Column="0"
+						BackgroundColor="#283593"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="B" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="1" Grid.Column="1"
+						Placeholder="Opcja B"
+						Text="{Binding OptionB}" />
+					<CheckBox
+						Grid.Row="1" Grid.Column="2"
+						IsChecked="{Binding IsBCorrect}"
+						Color="#283593" />
+
+					<!-- C -->
+					<Border
+						Grid.Row="2" Grid.Column="0"
+						BackgroundColor="#283593"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="C" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="2" Grid.Column="1"
+						Placeholder="Opcja C"
+						Text="{Binding OptionC}" />
+					<CheckBox
+						Grid.Row="2" Grid.Column="2"
+						IsChecked="{Binding IsCCorrect}"
+						Color="#283593" />
+
+					<!-- D -->
+					<Border
+						Grid.Row="3" Grid.Column="0"
+						BackgroundColor="#283593"
+						StrokeShape="RoundRectangle 6"
+						Padding="10,6"
+						WidthRequest="36">
+						<Label Text="D" TextColor="White"
+							   FontAttributes="Bold"
+							   HorizontalOptions="Center" />
+					</Border>
+					<Entry
+						Grid.Row="3" Grid.Column="1"
+						Placeholder="Opcja D"
+						Text="{Binding OptionD}" />
+					<CheckBox
+						Grid.Row="3" Grid.Column="2"
+						IsChecked="{Binding IsDCorrect}"
+						Color="#283593" />
+
+				</Grid>
+
+				<Label
+					Text="Zaznacz checkboxem wszystkie poprawne odpowiedzi."
+					FontSize="11"
+					TextColor="Gray"
+					FontAttributes="Italic" />
+
+			</VerticalStackLayout>
+			<!-- ════════════════════════════════════
+                 SEKCJA: Action
+                 ════════════════════════════════════ -->
+			<VerticalStackLayout
+                IsVisible="{Binding IsAction}"
+                Spacing="8">
+
+				<Border
+                    BackgroundColor="#FFF3E0"
+                    StrokeShape="RoundRectangle 8"
+                    Padding="10,6">
+					<Label
+                        Text="Czynność do wykonania"
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        TextColor="#E65100" />
+				</Border>
+
+				<Label
+                    Text="Opis czynności"
+                    FontSize="13"
+                    TextColor="Gray" />
+				<Editor
+                    Placeholder="Opisz dokładnie co gracz ma zrobić w tym miejscu..."
+                    Text="{Binding ActionDescription}"
+                    AutoSize="TextChanges"
+                    MinimumHeightRequest="100" />
+
+				<Label
+                    Text="Gracz potwierdzi wykonanie czynności przyciskiem."
+                    FontSize="11"
+                    TextColor="Gray"
+                    FontAttributes="Italic" />
+
+			</VerticalStackLayout>
+
+			<!-- ── Przyciski akcji ── -->
+			<Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="8"
+                Margin="0,8,0,24">
+
+				<Button
+                    Grid.Column="0"
+                    Text="Anuluj"
+                    BackgroundColor="Transparent"
+                    BorderColor="Gray"
+                    BorderWidth="1"
+                    TextColor="Gray"
+                    CornerRadius="12"
+                    HeightRequest="50"
+                    Command="{Binding CancelCommand}" />
+
+				<Button
+                    Grid.Column="1"
+                    Text="Zapisz zadanie"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    CornerRadius="12"
+                    HeightRequest="50"
+                    Command="{Binding SaveTaskCommand}" />
+
+			</Grid>
+
+		</VerticalStackLayout>
+	</ScrollView>
+</ContentPage>
