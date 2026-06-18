@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace GraTerenowa
+namespace GeoMapsPrototype
 {
     public partial class App : Application
     {
