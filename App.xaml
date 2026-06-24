@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GeoMapsPrototype"
+             xmlns:conv="clr-namespace:GraTerenowa.Converters;assembly=GeoMapsPrototype"
+             x:Class="GeoMapsPrototype.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--  Konwertery  -->
+            <conv:BoolToStringConverter
+                x:Key="BoolToActiveTextConverter"
+                TrueValue="✓ Aktywny"
+                FalseValue="Wybierz" />
+
+            <conv:BoolToActiveColorConverter
+                x:Key="BoolToActiveColorConverter" />
+
+            <conv:BoolToColorConverter
+                x:Key="BoolToColorConverter" />
+
+            <conv:InvertBoolConverter
+                x:Key="InvertBoolConverter" />
+
+            <conv:StringNotEmptyConverter
+                x:Key="StringNotEmptyConverter" />
+
+            <conv:NotNullToBoolConverter
+                x:Key="NotNullToBoolConverter" />
+
+            <conv:OptionSelectedConverter
+                x:Key="OptionSelectedConverter" />
+
+            <conv:TaskTypeToButtonTextConverter
+                x:Key="TaskTypeToButtonTextConverter" />
+
+            <conv:BoolToStringConverter
+                x:Key="BoolToTitleConverter"
+                TrueValue="Edytuj zadanie"
+                FalseValue="Nowe zadanie" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GraTerenowa.Views.LocationSetListPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:GraTerenowa.ViewModels"
+    xmlns:models="clr-namespace:GraTerenowa.Models"
+    Title="Zestawy lokalizacji">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Dodaj"
+            Command="{Binding AddSetCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto,*,Auto" Padding="16">
+
+        <!-- Wyszukiwarka -->
+        <SearchBar
+            Grid.Row="0"
+            Placeholder="Szukaj zestawu..."
+            Text="{Binding SearchQuery}"
+            Margin="0,0,0,8" />
+
+        <!-- Lista zestawów -->
+        <RefreshView
+            Grid.Row="1"
+            Command="{Binding RefreshCommand}"
+            IsRefreshing="{Binding IsRefreshing}">
+
+            <CollectionView
+                ItemsSource="{Binding FilteredSets}"
+                SelectionMode="None"
+                EmptyView="Brak zestawów. Dodaj pierwszy za pomocą przycisku powyżej.">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:LocationSet">
+                        <SwipeView>
+
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem
+                                        Text="Usuń"
+                                        BackgroundColor="#E53935"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:LocationSetViewModel}}, Path=DeleteSetCommand}"
+                                        CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem
+                                        Text="Edytuj"
+                                        BackgroundColor="#1E88E5"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:LocationSetViewModel}}, Path=EditSetCommand}"
+                                        CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+
+                            <Border
+                                Margin="0,4"
+                                Padding="16"
+                                StrokeShape="RoundRectangle 12"
+                                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1E1E2E}">
+
+                                <Grid
+                                    ColumnDefinitions="*,Auto"
+                                    RowDefinitions="Auto,Auto,Auto"
+                                    RowSpacing="4">
+
+                                    <Label
+                                        Grid.Row="0" Grid.Column="0"
+                                        Text="{Binding Name}"
+                                        FontSize="16"
+                                        FontAttributes="Bold" />
+
+                                    <!-- Znacznik aktywnego zestawu -->
+                                    <Border
+                                        Grid.Row="0" Grid.Column="1"
+                                        IsVisible="{Binding IsActive}"
+                                        BackgroundColor="#4CAF50"
+                                        StrokeShape="RoundRectangle 8"
+                                        Padding="8,2"
+                                        VerticalOptions="Center">
+                                        <Label
+                                            Text="Aktywny"
+                                            FontSize="11"
+                                            TextColor="White" />
+                                    </Border>
+
+                                    <Label
+                                        Grid.Row="1" Grid.Column="0"
+                                        Grid.ColumnSpan="2"
+                                        Text="{Binding Description}"
+                                        FontSize="13"
+                                        TextColor="Gray"
+                                        LineBreakMode="TailTruncation"
+                                        MaxLines="2" />
+
+                                    <HorizontalStackLayout
+                                        Grid.Row="2" Grid.Column="0"
+                                        Spacing="16">
+                                        <Label
+                                            Text="{Binding LocationCount, StringFormat='{0} zadań'}"
+                                            FontSize="12"
+                                            TextColor="Gray" />
+                                        <Label
+                                            Text="{Binding CreatedAt, StringFormat='{0:dd.MM.yyyy}'}"
+                                            FontSize="12"
+                                            TextColor="Gray" />
+                                    </HorizontalStackLayout>
+
+                                    <Button
+    Grid.Row="2" Grid.Column="1"
+    Text="{Binding IsActive,
+        Converter={StaticResource BoolToActiveTextConverter}}"
+    BackgroundColor="{Binding IsActive,
+        Converter={StaticResource BoolToActiveColorConverter}}"
+    TextColor="White"
+    FontSize="12"
+    Padding="12,4"
+    CornerRadius="8"
+    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:LocationSetViewModel}},
+        Path=SelectSetCommand}"
+    CommandParameter="{Binding .}" />
+
+                                </Grid>
+                            </Border>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+        <!-- Dolne przyciski -->
+        <Grid
+            Grid.Row="2"
+            ColumnDefinitions="*,*"
+            ColumnSpacing="8"
+            Margin="0,12,0,0">
+
+            <Button
+                Grid.Column="0"
+                Text="Edytuj zadania"
+                BackgroundColor="#1E88E5"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="50"
+                Command="{Binding GoToTaskEditorCommand}"
+                IsEnabled="{Binding HasActiveSet}" />
+
+            <Button
+                Grid.Column="1"
+                Text="Rozpocznij grę"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="50"
+                Command="{Binding StartGameCommand}"
+                IsEnabled="{Binding HasActiveSet}" />
+
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="geomaps.project">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:label="GeoMaps">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDzHyb-y8Y8owlxddO3dyX8nAQXO-ILEp0" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.geo.MAP_ID" android:value="7f2de8574d2ae4c5f8b241ab" />
+		<service android:name=".Platforms.Android.LocationTracker"
+				 android:foregroundServiceType="location"
+				 android:enabled="true"
+				 android:exported="false" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+</manifest>
